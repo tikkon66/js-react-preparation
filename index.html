@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function add(a, b) { return a + b}
+function subtract(a, b) { return a - b}
+function multiply(a, b) { return a * b}
+function divide(a, b) { return a / b}
+function isValidNumber(a) {return typeof a == "number" ? true : false;}
+function formatResult(a) { return a.toFixed(2)}
+
+
+function calculate(symbol, a, b) {
+    if (symbol == "divide" && b === 0) {
+        return "нельзя делить на ноль"
+    }
+    else {
+        if (isValidNumber(a) && isValidNumber(b)){
+            
+            let result;
+
+            switch (symbol) {
+                case "add": result = add(a,b);
+                break;
+                case "subtract": result = subtract(a,b);
+                break;
+                case "multiply": result = multiply(a,b);
+                break;
+                case "divide": result = divide(a,b);
+                break;
+                default: return "неправильные названия операций"; 
+            }
+
+            return formatResult(result) 
+        }
+        else {
+            return "значение не является числом"
+        }
+    }
+}
+
+console.log(calculate("divide", 5, 0))
+</script>
+</html>

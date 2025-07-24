@@ -1,0 +1,12 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Задача:\r Сделать калькулятор для метода console.\r 1-е значение — английское название операции,\r 2-е значение — первое число,\r 3-е значение — второе число.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
