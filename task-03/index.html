@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>task-03</title>
+</head>
+
+<body>
+    <div class="galery">
+        <div id="galery" class="galery-box">
+            <img onclick="openWindow(0)" src="img\1.jpg" alt="картина">
+            <img onclick="openWindow(1)" src="img\2.jpg" alt="картина">
+            <img onclick="openWindow(2)" src="img\3.jpg" alt="картина">
+            <img onclick="openWindow(3)" src="img\4.jpg" alt="картина">
+            <img onclick="openWindow(4)" src="img\5.jpg" alt="картина">
+            <img onclick="openWindow(5)" src="img\6.jpg" alt="картина">
+            <img onclick="openWindow(6)" src="img\7.jpg" alt="картина">
+            <img onclick="openWindow(7)" src="img\8.jpg" alt="картина">
+        </div>
+    </div>
+
+    <div id="window" class="window">
+        <div class="slider">
+            <img onclick="changeSlider(1)" class="arrow" src="img\left.png" alt="стрелка в право">
+            <div class="cartridge">
+                <div id="images" class="images">
+                    <img id="image" src="img\1.jpg" alt="картина">
+                    <img src="img\2.jpg" alt="картина">
+                    <img src="img\3.jpg" alt="картина">
+                    <img src="img\4.jpg" alt="картина">
+                    <img src="img\5.jpg" alt="картина">
+                    <img src="img\6.jpg" alt="картина">
+                    <img src="img\7.jpg" alt="картина">
+                    <img src="img\8.jpg" alt="картина">
+                </div>
+
+            </div>
+            <img onclick="closeWindow()" class="exit" src="img\exit.webp" alt="выход">
+            <img onclick="changeSlider(-1)" class="arrow"  src="img\right.png" alt="стрелка в лево">
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
